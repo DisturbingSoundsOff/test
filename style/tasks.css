@@ -1,0 +1,134 @@
+.fillMaxSize {
+    width: 100%; height: 100%;
+}
+
+.lab {
+    margin-top: 20px;
+    border-left: 5px solid #3ddc84;
+    padding-left: 55px;
+}
+
+.labTitle {
+    font-size: 65px; 
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.taskTitle {
+    font-size: 45px; 
+    margin-bottom: 40px;
+    margin-top: 40px;
+}
+
+.taskOneGrid {
+    display: grid; 
+    grid-template-columns: auto auto auto;
+    grid-gap: 30px;
+    justify-content: start;
+}
+
+.taskTwoFlexbox {
+    display: flex; 
+    flex-direction: row;
+    align-items: end; 
+    width: 100%; 
+    justify-content: space-around;
+}
+.taskTwoBorder {
+    border: 2px solid #8F8F9D;
+}
+
+.darkElement {
+    background-color: #2b2a33;
+    border-color: #8f8f9d;
+    color: #f8f8f2;
+    border-radius: 5px;
+    line-height: 25px;
+}
+
+#rez1 {
+    pointer-events: none;
+}
+
+.valueInput {
+    border: none;
+    border-bottom: 2px solid #8F8F9D;
+    border-radius: 5px 5px 0px 0px;
+}
+
+.taskButton {
+    border-radius: 100px;
+    font-size: 21px;
+}
+
+.taskOneButton {
+    padding-left: 22px;
+    padding-right: 22px;
+}
+
+.taskTwoButton {
+    padding-left: 16px;
+    padding-right: 16px;
+    margin: 18px;
+    height: 60px; 
+}
+
+#taskTwoTextAreaOutput {
+    font-size: 16px;
+}
+#taskTwoTextAreaOutput::first-letter {
+    font-size: 32px;
+    color: red;
+}
+
+.errorField {
+    color: red;
+    border-color: red;
+}
+
+textarea {
+    resize: none;
+}
+
+.image_container img {
+    border-image: linear-gradient(to bottom right ,#3ddc84, #FF79C6, #3ddc84) 10;
+    border-width: 4px;
+    border-style: solid;
+}
+
+.comment {
+    border-bottom: 2px solid #bd93f9;
+}
+
+#lr7_clock {
+    font-size: 48px;
+}
+
+.img_form {
+    width: 40%;
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.background_img{
+    position: relative;
+    top: 0;
+    left: 0;
+}
+
+.alt_img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 1;
+    transition:opacity 0.5s linear;
+}
+
+.hidden {
+    opacity: 0;
+    transition:opacity 0.5s linear;
+}
+
+
+

@@ -1,15 +1,190 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style/style.css">
+    <meta charset="utf-8">
 </head>
 
 <body>
 
-    <div style="background-color: black;">Yo, this is my site</div>
+    <header style="display: flex; flex-direction: row; justify-content: space-between;">
+
+        <div class="navbarLeft">
+            <a class="navItemCurrent" href="index.html">Главная</a>
+            <a class="navItem" href="pages/projects.html">Проекты</a>
+            <a class="navItem" href="pages/tasks.html">Задачи</a>
+        </div>
+
+        <div class="navbarRight">
+
+            <div class="selectLanguage">
+                <button onclick="listLanguages()" class="dropBtn">
+                    <img src="icons/language.svg" alt="" style="height: 35px; padding: 0px 12px; filter: invert(100%);">
+                    <span style="font-size: 21px;">
+                        Выпадающий список
+                    </span>
+                    <img src="icons/arrow_down.svg" alt="" style="height: 14px; padding: 4px 12px 0px 24px;">
+
+                </button>
+                <div id="dropList" class="dropContent">
+                    <a href="pages/tasks.html" style="color: black; text-decoration: none;">Задания</a><br>
+                    <a href="http://ddg.gg" style="color: black; text-decoration: none;">ddg</a><br>
+                    <a href="https://gprivate.com/65cmh" style="color: black; text-decoration: none;">HTML</a>
+                </div>
+            </div>
+
+            <a style="text-decoration: none; color: white;" href="pages/login.html">Вход / Регистрация</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="doubleGrid">
+            <span style="font-size: 90px;">
+                Сайт-портфолио Ларионова Олега
+            </span>
+            <img class="imgFace" src="icons/prof.png" alt="">
+        </div>
+
+        <p style="font-size: 35px;">
+            Здравствуйте!<br>
+            <br>
+            Меня зовут Олег, мне 21 год, живу Санкт-Петербурге.
+            На данный момент я учусь на третьем курсе Санкт-Петербургского государственного университета
+            телекоммуникаций имени профессора
+            М.А. Бонч-Бруевича, на направлении
+            “Прикладные информационные системы и технологии”.
+        </p>
+
+        <hr class="separator">
+
+        <div class="spacer"></div>
+
+        <div class="INFO_ABOUT_ME">
+
+            <span class="subtitle">Обо мне</span>
+
+            <div class="spacer"></div>
+
+            <div class="doubleGrid">
+                <span style="font-size: 30px; ">
+                    <p>
+                        Свой путь в изучении программирования я начал с
+                        курсов
+                        по Java от компании
+                        1C. Данные курсы зародили во мне любовь к программированию. На этих курсах я, к сожалению, не
+                        обучали
+                        никаким популярным в мире программирования на Java фреймворкам, не обучали архитектурным
+                        паттернам,
+                        да и в целом не раскрывали возможности языка за исключением написания дэсктопных приложений с,
+                        устаревшей даже по тогдашним меркам, библиотекой swing. Однако такая узкая направленность
+                        позволила
+                        хорошо выучить основы и полюбить язык.
+                    </p>
+                </span>
+                <img width="150px" src="icons/java_logo.svg" alt="">
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="doubleGrid">
+                <span style="font-size: 30px; ">
+                    По окончании курса основ Java мне предложили продолжить обучение на курсе Android разработки. Нехотя
+                    мне
+                    пришлось отказаться из-за переезда в Санкт-Петербург. Какое-то время я продолжал обучение
+                    самостоятельно, окунувшись с головой в разработку бэкенда и работой со Spring. Обучение давалось
+                    очень
+                    сложно, разные туториалы по Spring обучали разному и по-разному, от чего Spring показался мне
+                    неоправданно сложным. Возможно так оно и есть...
+                </span>
+                <img width="150px" src="icons/spring_boot_logo.svg" alt="">
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="doubleGrid">
+                <span style="font-size: 30px; ">
+                    Летом 22 года, желая отдохнуть от изучения Spring, я вспомнил о том, как в своё время не смог пойти
+                    на
+                    курсы по Android разработке, и решил побаловаться с ней самостоятельно, и неожиданно для самого
+                    себя,
+                    мне понравилось! Хоть у меня и были трудности со Spring, мне нравилось учить backend разработку.
+                    Знаний
+                    фронтенда у меня на тот момент практически не было, ведь все мои туториалы акцентировали внимание
+                    лишь
+                    на бэкенде, так что работа со фронтэндом на Android была глотком свежего воздуха, при этом в отличии
+                    от
+                    фронтенда в вебе, мобильная разработка имеет много общего с разработкой бэкенда, потому для меня она
+                    оказалась идеальным вариантом
+                </span>
+                <img width="150px" src="icons/android_logo.svg" alt="">
+            </div>
+            <div class="spacer"></div>
+
+            <div class="doubleGrid">
+                <span style="font-size: 30px; ">
+                    Ещё одним крайне приятным плюсом мобильной разработки стало моё знакомство с языком Kotlin. Java
+                    симпотизирует
+                    мне по сей день, однако Kotlin в моих глазах несравненно лучше. Простой синтаксис, возможность
+                    использования
+                    чего-то помимо ООП, наличие обратной совместимости и многое прочее заставило меня перестать
+                    оглядываться
+                    на Java
+                    и сделало программирование для меня ещё более приятным занятием.
+
+                </span>
+                <img width="150px" src="icons/kotlin_logo.svg" alt="">
+            </div>
+
+            <div class="spacer"></div>
+
+            <div class="doubleGrid">
+                <span style="font-size: 30px; ">
+                    Наконец Jetpack Compose. Во время курсов по Java, используя Swing, я едва ли не возненавидел
+                    программирование графических интерфейсов, и долгое время не понимал как людям может нравиться этим
+                    заниматься. Compose полностью перевернул моё мнение. С ним написание интерфейса - сплошное,
+                    функциональное, реактивное, декларативное удовольствие.
+                </span>
+                <img width="150px" src="icons/compose_logo.svg" alt="">
+            </div>
+
+            <div class="spacer"></div>
+
+            <hr class="separator">
+
+            <div class="spacer"></div>
+        </div>
+        <span class="subtitle">Контакты</span>
+
+        <div class="spacer"></div>
+
+        <div class="link">
+            <img width="70px" src="icons/gitlab_logo.svg" alt="">
+            <span style="font-size: 35px;">disturbing_sounds_off</span>
+        </div>
+
+        <div class="link">
+            <img width="70px" src="icons/mail_icon.svg" alt="">
+            <span style="font-size: 35px;">disturbingsoundsoff@proton.me</span>
+        </div>
+
+        <div class="link">
+            <img width="70px" src="icons/linkedin_logo.svg" alt="">
+            <span style="font-size: 35px;">disturbing_sounds_off</span>
+        </div>
+
+        <div class="spacer"></div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="scripts/language.js"></script>
 
 </body>
 

@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <link rel="stylesheet" href="../style/tasks.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <header style="display: flex; flex-direction: row; justify-content: space-between;">
+
+        <div class="navbarLeft">
+            <a class="navItem" href="../index.html">Главная</a>
+            <a class="navItem" href="projects.html">Проекты</a>
+            <a class="navItemCurrent" href="tasks.html">Задачи</a>
+        </div>
+
+        <div class="navbarRight">
+
+
+            <div class="selectLanguage">
+                <button onclick="listLanguages()" class="dropBtn">
+                    <img src="../icons/language.svg" alt=""
+                        style="height: 35px; padding: 0px 12px; filter: invert(100%);">
+                    <span style="font-size: 21px;">
+                        Выпадающий список
+                    </span>
+                    <img src="../icons/arrow_down.svg" alt="" style="height: 14px; padding: 4px 12px 0px 24px;">
+
+                </button>
+                <div id="dropList" class="dropContent">
+                    <a href="../index.html" style="color: black; text-decoration: none;">Главная</a><br>
+                    <a href="http://ddg.gg" style="color: black; text-decoration: none;">ddg</a><br>
+                    <a href="https://gprivate.com/65cmh" style="color: black; text-decoration: none;">HTML</a>
+                </div>
+            </div>
+            <a style="text-decoration: none; color: white;" href="pages/login.html">Вход / Регистрация</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ЛБ 4 ЗАДАНИЕ 1  -->
+        <span class="labTitle">
+            Практическая работа 4 <br>
+        </span>
+        <div id="LB_4" class="lab">
+
+            <div id="LB_4_TASK_1">
+
+                <span class="taskTitle">Задание 1</span>
+
+                <div class="spacer"></div>
+
+                <div style="padding-bottom: 32px;">
+                    <span style="font-size: 24px; color: yellow;">Вводить можно только целые и дробные числа!</span>
+                </div>
+
+                <div class="taskOneGrid">
+
+                    <span>Стоимость товара № 1 <br>(руб.) за ед.</span>
+                    <input class="darkElement valueInput checkfield" name="numOnly">
+                    <span class="errorField"></span>
+
+                    <span>Количество товара № 1 <br>(штук)</span>
+                    <input class="darkElement valueInput checkfield" name="numOnlyAmount">
+                    <span class="errorField"></span>
+
+                    <span>Стоимость товара № 2 <br>(руб.) за ед.</span>
+                    <input class="darkElement valueInput checkfield" name="numOnly">
+                    <span class="errorField"></span>
+
+                    <span>Количество товара № 2 <br>(штук)</span>
+                    <input class="darkElement valueInput checkfield" name="numOnlyAmount">
+                    <span class="errorField"></span>
+
+                    <span>Сумма заказа <br>(руб.)</span>
+                    <input id="rez1" readonly class="darkElement">
+                    <button id="taskOneSumButton" class="darkElement taskButton taskOneButton"
+                        type="button">Рассчитать</button>
+
+                </div>
+                <div class="spacer"></div>
+
+
+            </div>
+
+            <!-- ЛБ 4 ЗАДАНИЕ 2 -->
+            <div id="LB_4_TASK_2">
+                <div class="spacer"></div>
+                <div class="separator"></div>
+                <div class="spacer"></div>
+
+                <span class="taskTitle">Задание 2</span>
+
+                <div class="spacer"></div>
+
+                <div class="taskTwoFlexbox ">
+
+                    <div>
+                        <label id="taskTwoInputLabel" for="taskTwoTextAreaInput"
+                            style="font-size: 21px;">Ввод:</label><br>
+                        <textarea id="taskTwoTextAreaInput" wrap="hard"
+                            class="darkElement taskTwoBorder taskTwoTextArea" rows="17" cols="60"></textarea>
+                    </div>
+
+                    <button id="taskTwoComputeButton" type="button"
+                        class="darkElement taskButton taskTwoButton">Обработать
+                        ввод</button>
+
+                    <div style="width: 578px; height: 463px; display: flex; flex-direction: column;">
+                        <label for="taskTwoTextAreaOutput" style="font-size: 21px;">Вывод:</label><br>
+                        <div id="taskTwoTextAreaOutput" class="darkElement taskTwoBorder" style="flex: 1;">asdasd
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="spacer"></div>
+
+            </div>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <span class="labTitle">
+            Практическая работа 5 <br>
+        </span>
+        <div id="LB_5" class="lab">
+
+            <div id="LB_5_TASK_1_AND_2">
+
+                <span class="taskTitle">Задание 1 и 2</span>
+
+                <div class="spacer"></div>
+
+                <div class="spacer"></div>
+
+                <div id="lab5_images_container" class="image_container"
+                    style=" display: flex; flex-direction: row; gap: 25px; flex-wrap: wrap;">
+                </div>
+
+            </div>
+
+            <div class="spacer"></div>
+        </div>
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <span class="labTitle">
+            Практическая работа 6 <br>
+        </span>
+        <div id="LB_6" class="lab">
+
+            <div class="spacer"></div>
+            <div id="LB_6_TASK_1_AND_2">
+
+                <div id="comment_text_field" style="display: flex; flex-direction: row; gap: 25px; align-items: end;">
+                    <div>
+                        <label id="comment_textarea_label" for="comment_textarea"
+                            style="font-size: 21px;">Комментарий:</label><br>
+                        <textarea id="comment_textarea" class="darkElement" cols="60" rows="5">
+                            этот сайт очень плохой
+                            https://stackoverflow.com/questions/1500260/detect-urls-in-text-with-javascript ужасный
+                            https://duckduckgo.com/?q=js+regex+for+links&t=ffab&ia=web HTTP://regex101.com/ и отстойный
+                        </textarea>
+                    </div>
+                    <button type="button" id="comment_button" class="taskButton darkElement"
+                        style="height: 40px; padding: 5px">Отправить</button>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div id="comment_section" style="display: flex; flex-direction: column; row-gap: 25px;">
+                    <div>
+                        <span class="comment">очень крутой сайт!</span>
+                    </div>
+                    <div>
+                        <span class="comment">сайт мог бы быть лучше, если бы у него был бэкенд и использовался
+                            какой-нибудь
+                            UI фреймворк.</span>
+                    </div>
+                    <div>
+                        <span class="comment">интересно, как сложно написать такой же сайт с использованием веб
+                            ассемблера
+                            ?</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="spacer"></div>
+
+        </div>
+
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <span class="labTitle">
+            Практическая работа 7 <br>
+        </span>
+        <div id="LB_7" class="lab">
+
+            <div id="LB_7_TASK_1">
+
+                <div id="lr7_clock_holder">
+                    <span id="lr7_clock"></span>
+                </div>
+
+                <div class="spacer"></div>
+            </div>
+
+            <div id="LB_7_TASK_2">
+
+                <div style="display: flex; flex-direction: row; column-gap: 20px; align-items: end;">
+                    <div>
+                        <label id="lr7_interval_label" for="lr7_interval_input">Интервал смены изображений
+                            (мс):</label><br>
+                        <input id="lr7_interval_input" class="darkElement valueInput" type="text"
+                            style="width: 100%; line-height: 40px; margin-top: 10px; font-size: 18px;">
+                    </div>
+                    <button id="lr7_interval_button" type="button" class="darkElement"
+                        style="padding: 10px 15px; border-radius: 100px; font-size: 18px;">
+                        Установить интервал
+                    </button>
+                </div>
+
+                <div class="spacer"></div>
+
+                <div id="lr7_image_container" class="image_container"
+                    style="display: flex; flex-direction: row; gap: 25px;flex-wrap: wrap;">
+
+                </div>
+
+            </div>
+
+            <div class="spacer"></div>
+
+        </div>
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <span class="labTitle">
+            Практическая работа 8 <br>
+        </span>
+        <div id="LB_8" class="lab">
+            <div class="spacer"></div>
+
+            <div id="LB_8_TASK_1">
+
+                <div id="lr8_image_container" class="image_container"
+                    style="display: flex; flex-direction: row; gap: 25px;flex-wrap: wrap;">
+
+                    <div class="img_form">
+                        <img src="../photoOut/image10.jpg" alt="" style="width: 100%;" class="background_img">
+                        <img src="../photoOut/image9.jpg " alt="" style="width: 100%;" class="alt_img">
+                    </div>
+
+                    <div class="img_form">
+                        <img src="../photoOut/image12.jpg" alt="" style="width: 100%;" class="background_img">
+                        <img src="../photoOut/image11.jpg" alt="" style="width: 100%;" class="alt_img">
+                    </div>
+
+                    <div class="img_form">
+                        <img src="../photoOut/image14.jpg" alt="" style="width: 100%;" class="background_img">
+                        <img src="../photoOut/image13.jpg" alt="" style="width: 100%;" class="alt_img">
+                    </div>
+
+                    <div class="img_form">
+                        <img src="../photoOut/image16.jpg" alt="" style="width: 100%;" class="background_img">
+                        <img src="../photoOut/image15.jpg" alt="" style="width: 100%;" class="alt_img">
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="spacer"></div>
+
+        </div>
+
+
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="spacer"></div>
+        <div class="separator"></div>
+
+
+        <div class="contacts">
+
+            <div class="spacer"></div>
+            <span class="subtitle">Контакты</span>
+
+            <div class="spacer"></div>
+
+            <div class="link">
+                <img width="70px" src="../icons/gitlab_logo.svg" alt="">
+                <span style="font-size: 35px;">disturbing_sounds_off</span>
+            </div>
+
+            <div class="link">
+                <img width="70px" src="../icons/mail_icon.svg" alt="">
+                <span style="font-size: 35px;">disturbingsoundsoff@proton.me</span>
+            </div>
+
+            <div class="link">
+                <img width="70px" src="../icons/linkedin_logo.svg" alt="">
+                <span style="font-size: 35px;">disturbing_sounds_off</span>
+            </div>
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../dependencies/jquery-3.7.0.min.js"></script>
+    <script src="../scripts/language.js"></script>
+    <script src="../scripts/lr4.js"></script>
+    <script src="../scripts/lr5.js"></script>
+    <script src="../scripts/lr6.js"></script>
+    <script src="../scripts/lr7.js"></script>
+    <script src="../scripts/lr8.js"></script>
+
+</body>
+
+</html>

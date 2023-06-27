@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Document</title>
+    <link rel="stylesheet" href="../style/style.css">
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+    <header style="display: flex; flex-direction: row; justify-content: space-between;">
+
+
+        <div class="navbarLeft">
+            <a class="navItem" href="../index.html">Главная</a>
+            <a class="navItemCurrent" href="projects.html">Проекты</a>
+            <a class="navItem" href="tasks.html">Задачи</a>
+        </div>
+
+        <div class="navbarRight">
+
+            <div class="selectLanguage">
+                <button onclick="listLanguages()" class="dropBtn">
+                    <img src="../icons/language.svg" alt=""
+                        style="height: 35px; padding: 0px 12px; filter: invert(100%);">
+                    Язык
+                    <img src="../icons/arrow_down.svg" alt="" style="height: 14px; padding: 4px 12px 0px 24px;">
+
+                </button>
+                <div id="dropList" class="dropContent">
+                    <span>test1</span>
+                    <span>test2</span>
+                    <span>test3</span>
+                </div>
+            </div>
+
+            <a style="text-decoration: none; color: white;" href="pages/login.html">Вход / Регистрация</a>
+
+        </div>
+    </header>
+
+    <main>
+
+        <span class="subtitle">My projects</span>
+
+        <div class="spacer"></div>
+
+        <div>
+
+            <div class="projects1"></div>
+            <div class="projects2"></div>
+            <div class="projects3"></div>
+
+        </div>
+
+        <div class="spacer"></div>
+
+        <div class="contacts">
+
+            <span class="subtitle">contact me</span>
+
+            <div class="spacer"></div>
+
+            <div class="link">
+                <img width="70px" src="../icons/gitlab_logo.svg" alt="">
+                <span style="font-size: 35px;">disturbing_sounds_off</span>
+            </div>
+
+            <div class="link">
+                <img width="70px" src="../icons/mail_icon.svg" alt="">
+                <span style="font-size: 35px;">disturbingsoundsoff@proton.me</span>
+            </div>
+
+            <div class="link">
+                <img width="70px" src="../icons/linkedin_logo.svg" alt="">
+                <span style="font-size: 35px;">disturbing_sounds_off</span>
+            </div>
+
+            <div class="spacer"></div>
+            <div class="spacer"></div>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+    </footer>
+
+    <script src="../scripts/language.js"></script>
+
+</body>
+
+</html>
